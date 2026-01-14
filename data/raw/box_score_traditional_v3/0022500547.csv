@@ -1,0 +1,25 @@
+game_id,team_id,team_city,team_name,team_tricode,team_slug,person_id,first_name,family_name,name_i,player_slug,position,comment,jersey_num,minutes,field_goals_made,field_goals_attempted,field_goals_percentage,three_pointers_made,three_pointers_attempted,three_pointers_percentage,free_throws_made,free_throws_attempted,free_throws_percentage,rebounds_offensive,rebounds_defensive,rebounds_total,assists,steals,blocks,turnovers,fouls_personal,points,plus_minus_points
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1642262,Cody,Williams,C. Williams,cody-williams,F,,,32:28,5,9,0.556,1,3,0.333,4,5,0.8,1,1,2,0,0,0,0,3,15,-60.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1641707,Taylor,Hendricks,T. Hendricks,taylor-hendricks,F,,,28:51,2,6,0.333,0,4,0.0,3,4,0.75,0,4,4,1,0,0,0,1,7,-31.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,201567,Kevin,Love,K. Love,kevin-love,C,,,15:20,1,5,0.2,0,2,0.0,0,0,0.0,3,2,5,0,0,0,1,1,2,-26.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1641729,Brice,Sensabaugh,B. Sensabaugh,brice-sensabaugh,G,,,29:54,9,16,0.563,3,9,0.333,5,6,0.833,1,2,3,0,0,0,4,1,26,-21.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1641718,Keyonte,George,K. George,keyonte-george,G,,,23:21,2,7,0.286,0,2,0.0,0,0,0.0,1,1,2,5,1,1,5,1,4,-38.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1642268,Isaiah,Collier,I. Collier,isaiah-collier,,,,34:27,8,16,0.5,0,2,0.0,1,2,0.5,0,1,1,9,2,0,1,4,17,-27.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,203937,Kyle,Anderson,K. Anderson,kyle-anderson,,,,21:26,3,10,0.3,0,1,0.0,1,2,0.5,2,2,4,2,1,0,1,0,7,-20.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1642271,Kyle,Filipowski,K. Filipowski,kyle-filipowski,,,,24:42,2,10,0.2,0,1,0.0,0,0,0.0,3,7,10,1,1,1,1,5,4,-24.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1642383,Walter,Clayton Jr.,W. Clayton Jr.,walter-clayton-jr,,,,29:31,4,9,0.444,3,7,0.429,2,2,1.0,0,0,0,4,1,0,2,5,13,-28.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1628374,Lauri,Markkanen,L. Markkanen,lauri-markkanen,,DND - Rest,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,1629004,Svi,Mykhailiuk,S. Mykhailiuk,svi-mykhailiuk,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500547,1610612762,Utah,Jazz,UTA,jazz,203994,Jusuf,Nurkić,J. Nurkić,jusuf-nurkić,,DND - Injury/Illness,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1642851,Kon,Knueppel,K. Knueppel,kon-knueppel,F,,,18:07,5,7,0.714,2,3,0.667,0,0,0.0,0,0,0,6,3,0,0,1,12,21.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1628970,Miles,Bridges,M. Bridges,miles-bridges,F,,,21:46,5,6,0.833,3,4,0.75,2,2,1.0,0,7,7,5,0,0,0,1,15,23.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1631217,Moussa,Diabaté,M. Diabaté,moussa-diabaté,C,,,24:30,3,3,1.0,0,0,0.0,4,7,0.571,5,5,10,1,0,2,1,2,10,38.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1641706,Brandon,Miller,B. Miller,brandon-miller,G,,,21:58,7,19,0.368,2,9,0.222,2,2,1.0,1,3,4,4,3,0,3,4,18,36.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1630163,LaMelo,Ball,L. Ball,lamelo-ball,G,,,22:36,5,12,0.417,5,11,0.455,2,2,1.0,0,5,5,5,0,0,5,3,17,37.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1642883,Sion,James,S. James,sion-james,,,,26:17,1,2,0.5,0,1,0.0,2,2,1.0,1,6,7,5,2,1,0,2,4,21.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1641750,Ryan,Kalkbrenner,R. Kalkbrenner,ryan-kalkbrenner,,,,23:30,5,7,0.714,0,0,0.0,2,2,1.0,5,4,9,0,0,2,0,0,12,17.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1629684,Grant,Williams,G. Williams,grant-williams,,,,13:55,3,10,0.3,3,10,0.3,0,0,0.0,4,4,8,0,0,0,0,0,9,31.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1629012,Collin,Sexton,C. Sexton,collin-sexton,,,,17:40,5,9,0.556,2,5,0.4,3,4,0.75,1,4,5,4,0,0,2,0,15,17.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1630182,Josh,Green,J. Green,josh-green,,,,25:22,5,10,0.5,2,6,0.333,1,2,0.5,3,1,4,2,1,0,0,2,13,29.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1642275,Tidjane,Salaün,T. Salaün,tidjane-salaün,,,,12:19,2,6,0.333,1,4,0.25,0,0,0.0,1,4,5,2,0,0,1,1,5,1.0
+0022500547,1610612766,Charlotte,Hornets,CHA,hornets,1630544,Tre,Mann,T. Mann,tre-mann,,,,12:00,7,10,0.7,4,6,0.667,2,2,1.0,0,1,1,1,1,0,0,2,20,4.0

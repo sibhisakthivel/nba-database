@@ -1,0 +1,25 @@
+game_id,team_id,team_city,team_name,team_tricode,team_slug,person_id,first_name,family_name,name_i,player_slug,position,comment,jersey_num,minutes,field_goals_made,field_goals_attempted,field_goals_percentage,three_pointers_made,three_pointers_attempted,three_pointers_percentage,free_throws_made,free_throws_attempted,free_throws_percentage,rebounds_offensive,rebounds_defensive,rebounds_total,assists,steals,blocks,turnovers,fouls_personal,points,plus_minus_points
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1630180,Saddiq,Bey,S. Bey,saddiq-bey,F,,,34:29,8,16,0.5,3,8,0.375,1,4,0.25,4,9,13,3,2,0,0,2,20,4.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1629627,Zion,Williamson,Z. Williamson,zion-williamson,F,,,29:37,8,14,0.571,0,0,0.0,13,16,0.813,0,1,1,2,2,1,2,2,29,2.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1642852,Derik,Queen,D. Queen,derik-queen,C,,,16:56,4,9,0.444,0,0,0.0,0,0,0.0,2,3,5,4,1,1,1,4,8,-5.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1630530,Trey,Murphy III,T. Murphy III,trey-murphy-iii,G,,,36:09,7,16,0.438,4,10,0.4,2,3,0.667,0,4,4,4,2,0,1,3,20,20.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1642847,Jeremiah,Fears,J. Fears,jeremiah-fears,G,,,24:17,4,9,0.444,2,3,0.667,5,6,0.833,0,4,4,3,0,0,1,1,15,4.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1642877,Micah,Peavy,M. Peavy,micah-peavy,,,,19:50,5,9,0.556,0,2,0.0,0,2,0.0,1,2,3,2,4,0,0,1,10,13.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1630631,Jose,Alvarado,J. Alvarado,jose-alvarado,,,,31:56,7,16,0.438,2,9,0.222,0,0,0.0,1,7,8,8,2,0,2,2,16,14.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1642274,Yves,Missi,Y. Missi,yves-missi,,,,29:15,7,11,0.636,0,0,0.0,0,0,0.0,10,4,14,0,0,3,2,4,14,14.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1631121,Bryce,McGowens,B. McGowens,bryce-mcgowens,,,,17:31,3,4,0.75,2,3,0.667,3,4,0.75,1,2,3,2,0,0,1,2,11,-1.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1641722,Jordan,Hawkins,J. Hawkins,jordan-hawkins,,NWT - Personal,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,201599,DeAndre,Jordan,D. Jordan,deandre-jordan,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500289,1610612740,New Orleans,Pelicans,NOP,pelicans,1626172,Kevon,Looney,K. Looney,kevon-looney,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1630245,Ayo,Dosunmu,A. Dosunmu,ayo-dosunmu,F,,,32:10,11,16,0.688,2,4,0.5,4,5,0.8,1,1,2,1,0,0,1,1,28,6.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1641824,Matas,Buzelis,M. Buzelis,matas-buzelis,F,,,21:14,4,8,0.5,2,5,0.4,0,0,0.0,0,4,4,0,0,2,2,3,10,-23.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1630172,Patrick,Williams,P. Williams,patrick-williams,C,,,27:26,2,9,0.222,2,7,0.286,0,0,0.0,0,4,4,2,0,0,1,3,6,-7.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1629632,Coby,White,C. White,coby-white,G,,,35:16,7,15,0.467,3,10,0.3,7,10,0.7,0,5,5,6,1,0,5,1,24,-1.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1630581,Josh,Giddey,J. Giddey,josh-giddey,G,,,35:03,6,12,0.5,4,10,0.4,5,6,0.833,0,7,7,6,0,0,5,3,21,-13.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1630200,Tre,Jones,T. Jones,tre-jones,,,,27:39,2,4,0.5,0,1,0.0,6,9,0.667,1,1,2,11,0,0,0,3,10,-10.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1630188,Jalen,Smith,J. Smith,jalen-smith,,,,26:22,4,6,0.667,3,5,0.6,2,2,1.0,1,5,6,1,0,0,2,3,13,3.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1641763,Julian,Phillips,J. Phillips,julian-phillips,,,,14:37,3,3,1.0,1,1,1.0,0,0,0.0,1,1,2,1,1,1,1,1,7,-1.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1628975,Jevon,Carter,J. Carter,jevon-carter,,,,18:04,4,7,0.571,3,6,0.5,0,0,0.0,0,1,1,1,1,0,0,2,11,-13.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1642855,Noa,Essengue,N. Essengue,noa-essengue,,,,2:09,0,2,0.0,0,1,0.0,0,0,0.0,0,0,0,0,1,0,0,1,0,-6.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1641801,Emanuel,Miller,E. Miller,emanuel-miller,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500289,1610612741,Chicago,Bulls,CHI,bulls,1642950,Lachlan,Olbrich,L. Olbrich,lachlan-olbrich,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0

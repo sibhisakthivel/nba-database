@@ -1,0 +1,26 @@
+game_id,team_id,team_city,team_name,team_tricode,team_slug,person_id,first_name,family_name,name_i,player_slug,position,comment,jersey_num,minutes,field_goals_made,field_goals_attempted,field_goals_percentage,three_pointers_made,three_pointers_attempted,three_pointers_percentage,free_throws_made,free_throws_attempted,free_throws_percentage,rebounds_offensive,rebounds_defensive,rebounds_total,assists,steals,blocks,turnovers,fouls_personal,points,plus_minus_points
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1630249,Vít,Krejčí,V. Krejčí,vít-krejčí,F,,,36:05,3,9,0.333,3,8,0.375,0,0,0.0,0,3,3,2,0,0,2,3,9,1.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1630552,Jalen,Johnson,J. Johnson,jalen-johnson,F,,,39:06,8,18,0.444,3,8,0.375,6,6,1.0,0,8,8,9,3,1,4,2,25,-7.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1630168,Onyeka,Okongwu,O. Okongwu,onyeka-okongwu,C,,,33:35,8,13,0.615,4,7,0.571,1,1,1.0,0,1,1,3,1,2,5,6,21,-22.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1630700,Dyson,Daniels,D. Daniels,dyson-daniels,G,,,37:35,6,9,0.667,0,0,0.0,0,0,0.0,4,5,9,6,3,1,3,1,12,4.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1629638,Nickeil,Alexander-Walker,N. Alexander-Walker,nickeil-alexander-walker,G,,,36:43,9,20,0.45,1,9,0.111,5,6,0.833,0,3,3,3,0,0,0,4,24,-19.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1628379,Luke,Kennard,L. Kennard,luke-kennard,,,,17:05,1,2,0.5,1,2,0.5,0,0,0.0,0,0,0,5,1,0,1,3,3,4.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1631243,Mouhamed,Gueye,M. Gueye,mouhamed-gueye,,,,21:24,5,10,0.5,1,5,0.2,0,0,0.0,7,4,11,1,0,1,1,3,11,17.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1630811,Keaton,Wallace,K. Wallace,keaton-wallace,,,,13:09,2,4,0.5,2,4,0.5,1,2,0.5,0,0,0,2,1,0,1,1,7,-5.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1631216,Caleb,Houstan,C. Houstan,caleb-houstan,,,,3:23,0,2,0.0,0,1,0.0,0,0,0.0,0,0,0,0,0,0,0,1,0,-9.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1642854,Asa,Newell,A. Newell,asa-newell,,,,1:55,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,-4.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1642258,Zaccharie,Risacher,Z. Risacher,zaccharie-risacher,,DND - Injury/Illness,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500251,1610612737,Atlanta,Hawks,ATL,hawks,1631210,Jacob,Toppin,J. Toppin,jacob-toppin,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1629130,Duncan,Robinson,D. Robinson,duncan-robinson,F,,,30:41,5,10,0.5,4,9,0.444,0,0,0.0,1,2,3,3,1,0,2,1,14,4.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1630191,Isaiah,Stewart,I. Stewart,isaiah-stewart,F,,,26:10,4,7,0.571,0,0,0.0,5,5,1.0,2,7,9,3,0,0,2,2,13,6.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1631105,Jalen,Duren,J. Duren,jalen-duren,C,,,28:53,8,12,0.667,0,0,0.0,8,11,0.727,4,4,8,3,2,1,2,4,24,4.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1642450,Daniss,Jenkins,D. Jenkins,daniss-jenkins,G,,,29:40,6,10,0.6,1,4,0.25,1,2,0.5,0,3,3,7,2,0,1,1,14,8.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1630595,Cade,Cunningham,C. Cunningham,cade-cunningham,G,,,33:49,10,23,0.435,1,7,0.143,4,4,1.0,0,6,6,10,2,0,3,4,25,3.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1641709,Ausar,Thompson,A. Thompson,ausar-thompson,,,,23:45,3,5,0.6,0,0,0.0,0,0,0.0,0,2,2,0,1,3,0,3,6,-10.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1629750,Javonte,Green,J. Green,javonte-green,,,,28:37,3,5,0.6,1,3,0.333,2,2,1.0,0,3,3,1,2,0,2,0,9,14.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1630194,Paul,Reed,P. Reed,paul-reed,,,,8:51,2,2,1.0,0,0,0.0,0,0,0.0,0,2,2,0,1,0,0,0,4,0.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1641842,Ronald,Holland II,R. Holland II,ronald-holland-ii,,,,18:35,1,2,0.5,0,1,0.0,0,0,0.0,0,1,1,1,1,0,0,1,2,13.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1642404,Chaz,Lanier,C. Lanier,chaz-lanier,,,,10:59,3,7,0.429,3,7,0.429,0,0,0.0,0,2,2,0,0,0,0,0,9,-2.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1642403,Isaac,Jones,I. Jones,isaac-jones,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1631111,Wendell,Moore Jr.,W. Moore Jr.,wendell-moore-jr,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
+0022500251,1610612765,Detroit,Pistons,DET,pistons,1642449,Tolu,Smith,T. Smith,tolu-smith,,DNP - Coach's Decision,,,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0,0,0,0,0,0,0,0.0
