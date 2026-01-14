@@ -22,7 +22,7 @@ def _snake_case_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def ingest_box_score_traditional_v3(game_id: str) -> None:
+def ingest_box_score_traditional_v3(game_id: str, season: str) -> None:
     """
     Ingest player box score data for a single NBA game (BoxScoreTraditionalV3).
 
@@ -40,8 +40,10 @@ def ingest_box_score_traditional_v3(game_id: str) -> None:
     # 2. Normalize column names
     players_df = _snake_case_columns(players_df)
 
-    # 3. Save raw CSV snapshot
-    players_df.to_csv(RAW_CSV_DIR / f"{game_id}.csv", index=False)
+    # 3. Save raw CSV snapshot in season subfolder
+    season_dir = RAW_CSV_DIR / season
+    season_dir.mkdir(parents=True, exist_ok=True)
+    players_df.to_csv(season_dir / f"{game_id}.csv", index=False)
 
     insert_sql = text("""
         INSERT INTO raw.box_score_traditional_v3 (

@@ -6,6 +6,7 @@ from sqlalchemy import text
 
 from db.connection import get_engine
 from ingestion.box_score_traditional_v3 import ingest_box_score_traditional_v3
+from ingestion.league_game_log import ingest_league_game_log
 
 
 # -----------------------------
@@ -81,7 +82,7 @@ def update_box_score_traditional_v3():
         print(f"\n➡️  [{i}/{len(missing_game_ids)}] Ingesting game_id={game_id}")
 
         try:
-            ingest_box_score_traditional_v3(game_id)
+            ingest_box_score_traditional_v3(game_id, SEASON)
         except Exception as e:
             # Fail loudly but continue
             print(f"❌ Error ingesting game_id={game_id}: {e}")
@@ -93,9 +94,26 @@ def update_box_score_traditional_v3():
     print("\n✅ Update complete.")
 
 
+def update_league_game_log():
+    """
+    One-click updater for league game log:
+    - ingests full season game log data
+    - safe to re-run (primary key prevents duplicates)
+    """
+    print(f"\n📋 Ingesting LeagueGameLog for {SEASON} ({SEASON_TYPE})...")
+    
+    try:
+        ingest_league_game_log(SEASON, SEASON_TYPE)
+        print("✅ LeagueGameLog update complete.")
+    except Exception as e:
+        print(f"❌ Error ingesting LeagueGameLog: {e}")
+        raise
+
+
 # -----------------------------
 # ENTRY POINT
 # -----------------------------
 
 if __name__ == "__main__":
+    update_league_game_log()
     update_box_score_traditional_v3()
