@@ -121,6 +121,7 @@ def ingest_league_game_log(season: str, season_type: str = "Regular Season") -> 
             :plus_minus,
             :video_available
         )
+        ON CONFLICT (game_id, team_id) DO NOTHING;
     """)
 
     inserted = 0

@@ -51,5 +51,5 @@ CREATE TABLE IF NOT EXISTS raw.league_game_log (
 
     -- Constraints
     CONSTRAINT pk_raw_league_game_log
-        PRIMARY KEY (game_id, team_id)
+        PRIMARY KEY (season_id, game_id, team_id)
 );

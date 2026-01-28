@@ -54,5 +54,5 @@ CREATE TABLE IF NOT EXISTS raw.box_score_traditional_v3 (
 
     -- Constraints
     CONSTRAINT pk_raw_box_score_traditional_v3
-        PRIMARY KEY (game_id, person_id)
+        PRIMARY KEY (season_id, game_id, person_id)
 );

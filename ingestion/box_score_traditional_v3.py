@@ -118,6 +118,7 @@ def ingest_box_score_traditional_v3(game_id: str, season: str) -> None:
             :points,
             :plus_minus_points
         )
+        ON CONFLICT (game_id, person_id) DO NOTHING;
     """)
 
     inserted = 0
