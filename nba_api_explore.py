@@ -138,85 +138,85 @@ def get_endpoint_columns(endpoint_class, endpoint_name: str, game_id: str, seaso
     return None, "All parameter combinations failed"
 
 
-# def main():
-#     """Main execution"""
-#     print("🏀 NBA API BoxScore Endpoints - Column Names")
-#     print("=" * 60)
-#     
-#     # Get sample game_ids for testing
-#     print("\n📋 Getting sample game_ids...")
-#     game_ids = get_sample_game_ids(count=3)
-#     if not game_ids:
-#         print("❌ Could not get sample game_ids. Exiting.")
-#         sys.exit(1)
-#     print(f"✅ Using game_ids: {', '.join(game_ids)}\n")
-#     
-#     # Discover all endpoints
-#     all_endpoints = discover_all_endpoints()
-#     
-#     # Filter to BoxScore endpoints
-#     boxscore_endpoints = {
-#         name: endpoint_class 
-#         for name, endpoint_class in all_endpoints.items() 
-#         if name.startswith("BoxScore")
-#     }
-#     
-#     print(f"Found {len(boxscore_endpoints)} BoxScore endpoints:\n")
-#     print("=" * 60)
-#     
-#     # Configuration
-#     SLEEP_BETWEEN_ENDPOINTS = 1.5  # Seconds to sleep between endpoint calls
-#     SLEEP_BETWEEN_GAME_IDS = 0.5   # Seconds to sleep between game_id attempts
-#     
-#     # Known problematic endpoints that hang or timeout
-#     problematic_endpoints = {"BoxScoreHustleV2"}  # Add more as discovered
-#     
-#     # Process each BoxScore endpoint
-#     for i, (endpoint_name, endpoint_class) in enumerate(sorted(boxscore_endpoints.items()), 1):
-#         print(f"\n{i}. {endpoint_name}")
-#         print("-" * 60)
-#         
-#         # Skip known problematic endpoints
-#         if endpoint_name in problematic_endpoints:
-#             print(f"   ⚠️  Skipping (known to hang/timeout)")
-#             # Still sleep to maintain rate limiting
-#             if i < len(boxscore_endpoints):
-#                 time.sleep(SLEEP_BETWEEN_ENDPOINTS)
-#             continue
-#         
-#         # Try each game_id until one works
-#         columns = None
-#         error_msg = None
-#         timed_out = False
-#         for game_id_idx, game_id in enumerate(game_ids):
-#             columns, error_msg = get_endpoint_columns(endpoint_class, endpoint_name, game_id)
-#             if columns:
-#                 break  # Success, no need to try other game_ids
-#             # If we got a timeout, don't try other game_ids
-#             if error_msg and "timed out" in error_msg.lower():
-#                 timed_out = True
-#                 break
-#             # Sleep between game_id attempts (except after the last one)
-#             if game_id_idx < len(game_ids) - 1:
-#                 time.sleep(SLEEP_BETWEEN_GAME_IDS)
-#         
-#         if columns:
-#             print(f"   ✅ Found {len(columns)} unique columns:")
-#             for col in columns:
-#                 print(f"   - {col}")
-#         else:
-#             print(f"   ❌ Could not retrieve columns")
-#             if error_msg:
-#                 print(f"   Error: {error_msg}")
-#             if timed_out:
-#                 print(f"   💡 Tip: This endpoint may be slow or unavailable. Consider skipping.")
-#         
-#         # Sleep between endpoints to avoid rate limiting
-#         if i < len(boxscore_endpoints):
-#             time.sleep(SLEEP_BETWEEN_ENDPOINTS)
-#     
-#     print("\n" + "=" * 60)
-#     print("✅ Complete")
+def print_boxscore_columns():
+    """Print column names for all BoxScore endpoints"""
+    print("🏀 NBA API BoxScore Endpoints - Column Names")
+    print("=" * 60)
+    
+    # Get sample game_ids for testing
+    print("\n📋 Getting sample game_ids...")
+    game_ids = get_sample_game_ids(count=3)
+    if not game_ids:
+        print("❌ Could not get sample game_ids. Exiting.")
+        sys.exit(1)
+    print(f"✅ Using game_ids: {', '.join(game_ids)}\n")
+    
+    # Discover all endpoints
+    all_endpoints = discover_all_endpoints()
+    
+    # Filter to BoxScore endpoints
+    boxscore_endpoints = {
+        name: endpoint_class 
+        for name, endpoint_class in all_endpoints.items() 
+        if name.startswith("BoxScore")
+    }
+    
+    print(f"Found {len(boxscore_endpoints)} BoxScore endpoints:\n")
+    print("=" * 60)
+    
+    # Configuration
+    SLEEP_BETWEEN_ENDPOINTS = 1.5  # Seconds to sleep between endpoint calls
+    SLEEP_BETWEEN_GAME_IDS = 0.5   # Seconds to sleep between game_id attempts
+    
+    # Known problematic endpoints that hang or timeout
+    problematic_endpoints = {"BoxScoreHustleV2"}  # Add more as discovered
+    
+    # Process each BoxScore endpoint
+    for i, (endpoint_name, endpoint_class) in enumerate(sorted(boxscore_endpoints.items()), 1):
+        print(f"\n{i}. {endpoint_name}")
+        print("-" * 60)
+        
+        # Skip known problematic endpoints
+        if endpoint_name in problematic_endpoints:
+            print(f"   ⚠️  Skipping (known to hang/timeout)")
+            # Still sleep to maintain rate limiting
+            if i < len(boxscore_endpoints):
+                time.sleep(SLEEP_BETWEEN_ENDPOINTS)
+            continue
+        
+        # Try each game_id until one works
+        columns = None
+        error_msg = None
+        timed_out = False
+        for game_id_idx, game_id in enumerate(game_ids):
+            columns, error_msg = get_endpoint_columns(endpoint_class, endpoint_name, game_id)
+            if columns:
+                break  # Success, no need to try other game_ids
+            # If we got a timeout, don't try other game_ids
+            if error_msg and "timed out" in error_msg.lower():
+                timed_out = True
+                break
+            # Sleep between game_id attempts (except after the last one)
+            if game_id_idx < len(game_ids) - 1:
+                time.sleep(SLEEP_BETWEEN_GAME_IDS)
+        
+        if columns:
+            print(f"   ✅ Found {len(columns)} unique columns:")
+            for col in columns:
+                print(f"   - {col}")
+        else:
+            print(f"   ❌ Could not retrieve columns")
+            if error_msg:
+                print(f"   Error: {error_msg}")
+            if timed_out:
+                print(f"   💡 Tip: This endpoint may be slow or unavailable. Consider skipping.")
+        
+        # Sleep between endpoints to avoid rate limiting
+        if i < len(boxscore_endpoints):
+            time.sleep(SLEEP_BETWEEN_ENDPOINTS)
+    
+    print("\n" + "=" * 60)
+    print("✅ Complete")
 
 
 def find_player_id(player_name: str, season: str = "2025-26"):
@@ -490,4 +490,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # Uncomment the function you want to run:
+    print_boxscore_columns()  # Print column names for all BoxScore endpoints
+    # main()  # LeBron James potential assists analysis

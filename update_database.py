@@ -7,6 +7,7 @@ from sqlalchemy import text
 
 from db.connection import get_engine
 from ingestion.box_score_traditional_v3 import ingest_box_score_traditional_v3
+from ingestion.box_score_player_track_v3 import ingest_box_score_player_track_v3
 from ingestion.league_game_log import ingest_league_game_log
 from ingestion.potential_ast import (
     get_all_game_ids_from_api as get_all_game_ids_for_potential_ast,
@@ -62,6 +63,22 @@ def get_ingested_game_ids_from_db() -> Set[str]:
         return {row[0] for row in result}
 
 
+def get_ingested_player_track_game_ids_from_db() -> Set[str]:
+    """
+    Fetch distinct game_ids already ingested into raw.box_score_player_track_v3.
+    """
+    engine = get_engine()
+
+    query = """
+        SELECT DISTINCT game_id
+        FROM raw.box_score_player_track_v3
+    """
+
+    with engine.connect() as conn:
+        result = conn.execute(text(query))
+        return {row[0] for row in result}
+
+
 # -----------------------------
 # ORCHESTRATION
 # -----------------------------
@@ -101,6 +118,49 @@ def update_box_score_traditional_v3():
         time.sleep(SLEEP_SECONDS)
 
     print("\n✅ Update complete.")
+
+
+def update_box_score_player_track_v3():
+    """
+    One-click updater for player tracking box scores:
+    - finds missing games
+    - ingests them one-by-one
+    - sleeps between API calls
+    - saves CSV snapshots per game
+    """
+
+    print("\n🔍 Discovering games from NBA API...")
+    api_game_ids = get_all_game_ids_from_api(SEASON, SEASON_TYPE)
+
+    print("📦 Checking existing database records...")
+    db_game_ids = get_ingested_player_track_game_ids_from_db()
+
+    missing_game_ids = sorted(api_game_ids - db_game_ids)
+
+    print(f"🏀 Season: {SEASON}")
+    print(f"📊 Games in API: {len(api_game_ids)}")
+    print(f"✅ Games already ingested: {len(db_game_ids)}")
+    print(f"⏳ Games to ingest: {len(missing_game_ids)}")
+
+    if len(missing_game_ids) == 0:
+        print("✅ No new games to ingest.")
+        return
+
+    for i, game_id in enumerate(missing_game_ids, start=1):
+        print(f"\n➡️  [{i}/{len(missing_game_ids)}] Ingesting game_id={game_id}")
+
+        try:
+            ingest_box_score_player_track_v3(game_id, SEASON)
+        except Exception as e:
+            # Fail loudly but continue
+            print(f"❌ Error ingesting game_id={game_id}: {e}")
+
+        # Rate limiting
+        if i < len(missing_game_ids):
+            print(f"🕒 Sleeping {SLEEP_SECONDS}s...")
+            time.sleep(SLEEP_SECONDS)
+
+    print("\n✅ Player tracking box score update complete.")
 
 
 def update_league_game_log():
@@ -272,6 +332,7 @@ def fix_missing_potential_ast():
 if __name__ == "__main__":
     update_league_game_log()
     update_box_score_traditional_v3()
+    update_box_score_player_track_v3()
     # Use update_potential_ast_all() to re-process ALL games/dates
     # Use update_potential_ast() to only process missing games
     # Use update_potential_ast_daily() for daily updates (new dates only)
